@@ -93,16 +93,24 @@ int main()
 							{
 								MainSum = MainSum + 40;
 
-								MainSum = MainSum - BanTinctures;
+								
 
 								BanFrukt = BanFrukt + 1;
+
+								if (BanTinctures > 0)
+								{
+									MainSum = MainSum - BanTinctures;
+								}
 
 							}
 							else if (choiceFrukt == 2)
 							{
 								MainSum = MainSum +60;
 								
-								MainSum = MainSum - BanTinctures;
+								if (BanTinctures > 0)
+								{
+									MainSum = MainSum - BanTinctures;
+								}
 
 								BanFrukt = BanFrukt + 1;
 							}
@@ -110,7 +118,10 @@ int main()
 							{
 								MainSum = MainSum +80;
 
-								MainSum = MainSum - BanTinctures;
+								if (BanTinctures > 0)
+								{
+									MainSum = MainSum - BanTinctures;
+								}
 
 								BanFrukt = BanFrukt + 1;
 							}
@@ -118,7 +129,10 @@ int main()
 							{
 								MainSum = MainSum +100;
 
-								MainSum = MainSum - BanTinctures;
+								if (BanTinctures > 0)
+								{
+									MainSum = MainSum - BanTinctures;
+								}
 
 								BanFrukt = BanFrukt + 1;
 
